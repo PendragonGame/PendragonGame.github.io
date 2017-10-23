@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: Map</title>
+	<title>Documentation Source: app/states/gameover.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,209 +74,55 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: Map</h1>
+		<h1 class="page-title">Source: app/states/gameover.js</h1>
+    
 <section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/**
+ * @module states/GameOver
+ */
 
-<header>
-    
-</header>
+const ui = require('../ui/ui');
+let GameOver = {};
 
+GameOver.create = function() {
+    let gameoverText = game.add.text(game.camera.width/2, 100, 'Game Over');
+    gameoverText.anchor.setTo(.5, .5);
+    gameoverText.font = 'Press Start 2P';
+    gameoverText.fill = '#FFFFFF';
+    gameoverText.fontSize = '4em';
 
-<article>
-    <div class="container-overview">
-    
-        
+    let scoreText = game.add.text(game.camera.width/2,
+         200, 'Score:'+game.score);
+    scoreText.anchor.setTo(.5, .5);
+    scoreText.font = 'Press Start 2P';
+    scoreText.fill = '#FFFFFF';
+    scoreText.fontSize = '3.6em';
 
-        
-<dl class="details">
-    
+    let dayText = game.add.text(game.camera.width/2,
+         260, 'Days Survived:'+game.dayCount);
+    dayText.anchor.setTo(.5, .5);
+    dayText.font = 'Press Start 2P';
+    dayText.fill = '#FFFFFF';
+    dayText.fontSize = '3.6em';
 
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+    let menu = new ui.MenuButton(game.camera.width/2, game.camera.height/2+60,
+         'Main Menu', null, ()=>{
+             game.state.start('Menu');
+            }, '4em');
+    menu.text.fill = '#FFFFFF';
+};
+module.exports = GameOver;
+</pre>
+    </article>
 </section>
 
-
-
-
-	<h1 class="page-title">Module: Map</h1>
-<section>
-
-<header>
-    
-</header>
-
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
 
 
 
@@ -286,10 +132,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
 	
 
 </div>

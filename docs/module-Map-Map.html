@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: dataStore</title>
+	<title>Documentation Namespace: Map</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,10 +79,17 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: dataStore</h1>
+	<h1 class="page-title">Namespace: Map</h1>
 <section>
 
 <header>
+    
+        <h2>
+            <span class="ancestors"><a href="module-Map.html">Map</a>~</span>
+        
+        Map
+        </h2>
+        
     
 </header>
 
@@ -127,8 +134,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-2">line 2</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-17">line 17</a>
 			</li>
 		</ul>
 	</dd>
@@ -165,7 +172,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".autosaveEntity"><span class="type-signature">&lt;static> </span>autosaveEntity<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".create"><span class="type-signature">&lt;static> </span>create<span class="signature">(entities, dimensions)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -173,7 +180,7 @@
 
     
     <div class="description">
-        <p>Store entities as autosave</p>
+        <p>Create a new map</p>
     </div>
     
 
@@ -208,13 +215,13 @@
 
         <tr>
             
-                <td class="name"><code>entity</code></td>
+                <td class="name"><code>entities</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="module-entity_Entity-Entity.html">module:entity/Entity~Entity</a></span>
+<span class="param-type">Array</span>
 
 
 
@@ -229,262 +236,10 @@
         </tr>
 
     
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-28">line 28</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".autosaveEntity"><span class="type-signature">&lt;static> </span>autosaveEntity<span class="signature">(entity)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Store entities as autosave</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
 
         <tr>
             
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="module-entity_Entity-Entity.html">module:entity/Entity~Entity</a></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-28">line 28</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".getLoadedState"><span class="type-signature">&lt;static> </span>getLoadedState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Get the previously loaded state as a Promise</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>dimensions</code></td>
             
 
             <td class="type">
@@ -545,8 +300,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-80">line 80</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-29">line 29</a>
 			</li>
 		</ul>
 	</dd>
@@ -571,32 +326,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <ul>
-<li>Promise with previously loaded data</li>
-</ul>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -605,7 +334,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getLoadedState"><span class="type-signature">&lt;static> </span>getLoadedState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".create"><span class="type-signature">&lt;static> </span>create<span class="signature">(entities, dimensions)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -613,7 +342,7 @@
 
     
     <div class="description">
-        <p>Get the previously loaded state as a Promise</p>
+        <p>Create a new map</p>
     </div>
     
 
@@ -648,7 +377,31 @@
 
         <tr>
             
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>entities</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dimensions</code></td>
             
 
             <td class="type">
@@ -709,8 +462,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-80">line 80</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-29">line 29</a>
 			</li>
 		</ul>
 	</dd>
@@ -735,32 +488,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <ul>
-<li>Promise with previously loaded data</li>
-</ul>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -769,7 +496,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getSaveStates"><span class="type-signature">&lt;static> </span>getSaveStates<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".discreteSamples"><span class="type-signature">&lt;static> </span>discreteSamples<span class="signature">( [n=])</span><span class="type-signature"> &rarr; {Array.&lt;any>}</span></h4>
     
     
 </dt>
@@ -777,7 +504,7 @@
 
     
     <div class="description">
-        <p>Get a list of save states</p>
+        <p>Get n discrete samples from array</p>
     </div>
     
 
@@ -786,6 +513,68 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n=</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Number of samples to pick. Default = 1</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -823,8 +612,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-46">line 46</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-106">line 106</a>
 			</li>
 		</ul>
 	</dd>
@@ -852,12 +641,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with list of save states</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -866,7 +649,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Array.&lt;any></span>
 
 
 
@@ -883,7 +666,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getSaveStates"><span class="type-signature">&lt;static> </span>getSaveStates<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".discreteSamples"><span class="type-signature">&lt;static> </span>discreteSamples<span class="signature">( [n=])</span><span class="type-signature"> &rarr; {Array.&lt;any>}</span></h4>
     
     
 </dt>
@@ -891,7 +674,7 @@
 
     
     <div class="description">
-        <p>Get a list of save states</p>
+        <p>Get n discrete samples from array</p>
     </div>
     
 
@@ -900,6 +683,68 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n=</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Number of samples to pick. Default = 1</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -937,8 +782,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-46">line 46</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-106">line 106</a>
 			</li>
 		</ul>
 	</dd>
@@ -966,12 +811,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with list of save states</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -980,7 +819,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Array.&lt;any></span>
 
 
 
@@ -997,7 +836,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".loadState"><span class="type-signature">&lt;static> </span>loadState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".getByID"><span class="type-signature">&lt;static> </span>getByID<span class="signature">(id)</span><span class="type-signature"> &rarr; {Entity}</span></h4>
     
     
 </dt>
@@ -1005,7 +844,7 @@
 
     
     <div class="description">
-        <p>Load a state given a save state key</p>
+        <p>Get Entity with ID</p>
     </div>
     
 
@@ -1040,7 +879,7 @@
 
         <tr>
             
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
@@ -1057,7 +896,7 @@
 
             
 
-            <td class="description last"><p>Save State Key</p></td>
+            <td class="description last"><p>ID of <code>Entity</code></p></td>
         </tr>
 
     
@@ -1101,8 +940,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-63">line 63</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-121">line 121</a>
 			</li>
 		</ul>
 	</dd>
@@ -1130,12 +969,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with saved data</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -1144,7 +977,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Entity</span>
 
 
 
@@ -1161,7 +994,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".loadState"><span class="type-signature">&lt;static> </span>loadState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".getByID"><span class="type-signature">&lt;static> </span>getByID<span class="signature">(id)</span><span class="type-signature"> &rarr; {Entity}</span></h4>
     
     
 </dt>
@@ -1169,7 +1002,7 @@
 
     
     <div class="description">
-        <p>Load a state given a save state key</p>
+        <p>Get Entity with ID</p>
     </div>
     
 
@@ -1204,7 +1037,7 @@
 
         <tr>
             
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
@@ -1221,7 +1054,7 @@
 
             
 
-            <td class="description last"><p>Save State Key</p></td>
+            <td class="description last"><p>ID of <code>Entity</code></p></td>
         </tr>
 
     
@@ -1265,8 +1098,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-63">line 63</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-121">line 121</a>
 			</li>
 		</ul>
 	</dd>
@@ -1294,12 +1127,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with saved data</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -1308,7 +1135,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Entity</span>
 
 
 
@@ -1325,7 +1152,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".manualSaveState"><span class="type-signature">&lt;static> </span>manualSaveState<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".insert"><span class="type-signature">&lt;static> </span>insert<span class="signature">(entity)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -1370,7 +1197,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type">Object</span>
 
 
 
@@ -1409,57 +1236,384 @@
     
 
 	
-	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Deprecated:</dt>
+
 	
-    <dd class="yes-def tag-deprecated">
-        <ul class="dummy">
-            <li>Yes</li>
-        </ul>
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-51">line 51</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".insert"><span class="type-signature">&lt;static> </span>insert<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-51">line 51</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".nearest"><span class="type-signature">&lt;static> </span>nearest<span class="signature">(entity, count, maxDistance)</span><span class="type-signature"> &rarr; {Array.Neighbors}</span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Entity</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Number of neighbors</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxDistance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Range to check within</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-74">line 74</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.Neighbors</span>
+
+
+
     </dd>
-    
-    
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-37">line 37</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
 </dl>
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+        
 
     
 </dd>
@@ -1468,7 +1622,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".manualSaveState"><span class="type-signature">&lt;static> </span>manualSaveState<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".nearest"><span class="type-signature">&lt;static> </span>nearest<span class="signature">(entity, count, maxDistance)</span><span class="type-signature"> &rarr; {Array.Neighbors}</span></h4>
     
     
 </dt>
@@ -1513,6 +1667,54 @@
             <td class="type">
             
                 
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Entity</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Number of neighbors</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxDistance</code></td>
+            
+
+            <td class="type">
+            
+                
 <span class="param-type">any</span>
 
 
@@ -1524,7 +1726,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Range to check within</p></td>
         </tr>
 
     
@@ -1552,557 +1754,68 @@
     
 
 	
-	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Deprecated:</dt>
+
 	
-    <dd class="yes-def tag-deprecated">
-        <ul class="dummy">
-            <li>Yes</li>
-        </ul>
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-74">line 74</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.Neighbors</span>
+
+
+
     </dd>
-    
-    
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-37">line 37</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
 </dl>
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
         
-            
-<hr>
-<dt>
-    <h4 class="name" id=".resetLoadState"><span class="type-signature">&lt;static> </span>resetLoadState<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Invalidate the previously loaded state</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-87">line 87</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".resetLoadState"><span class="type-signature">&lt;static> </span>resetLoadState<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Invalidate the previously loaded state</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-87">line 87</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~storeEntity"><span class="type-signature">&lt;inner> </span>storeEntity<span class="signature">(entity, channel)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Update entity by sending information to backend</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>channel</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-11">line 11</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~storeEntity"><span class="type-signature">&lt;inner> </span>storeEntity<span class="signature">(entity, channel)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Update entity by sending information to backend</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>channel</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-11">line 11</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
     
 </dd>
@@ -2120,10 +1833,17 @@
 
 
 
-	<h1 class="page-title">Module: dataStore</h1>
+	<h1 class="page-title">Namespace: Map</h1>
 <section>
 
 <header>
+    
+        <h2>
+            <span class="ancestors"><a href="module-Map.html">Map</a>~</span>
+        
+        Map
+        </h2>
+        
     
 </header>
 
@@ -2168,8 +1888,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-2">line 2</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-17">line 17</a>
 			</li>
 		</ul>
 	</dd>
@@ -2206,7 +1926,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".autosaveEntity"><span class="type-signature">&lt;static> </span>autosaveEntity<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".create"><span class="type-signature">&lt;static> </span>create<span class="signature">(entities, dimensions)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -2214,7 +1934,7 @@
 
     
     <div class="description">
-        <p>Store entities as autosave</p>
+        <p>Create a new map</p>
     </div>
     
 
@@ -2249,13 +1969,13 @@
 
         <tr>
             
-                <td class="name"><code>entity</code></td>
+                <td class="name"><code>entities</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="module-entity_Entity-Entity.html">module:entity/Entity~Entity</a></span>
+<span class="param-type">Array</span>
 
 
 
@@ -2270,262 +1990,10 @@
         </tr>
 
     
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-28">line 28</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".autosaveEntity"><span class="type-signature">&lt;static> </span>autosaveEntity<span class="signature">(entity)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Store entities as autosave</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
 
         <tr>
             
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="module-entity_Entity-Entity.html">module:entity/Entity~Entity</a></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-28">line 28</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".getLoadedState"><span class="type-signature">&lt;static> </span>getLoadedState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Get the previously loaded state as a Promise</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>dimensions</code></td>
             
 
             <td class="type">
@@ -2586,8 +2054,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-80">line 80</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-29">line 29</a>
 			</li>
 		</ul>
 	</dd>
@@ -2612,32 +2080,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <ul>
-<li>Promise with previously loaded data</li>
-</ul>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -2646,7 +2088,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getLoadedState"><span class="type-signature">&lt;static> </span>getLoadedState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".create"><span class="type-signature">&lt;static> </span>create<span class="signature">(entities, dimensions)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -2654,7 +2096,7 @@
 
     
     <div class="description">
-        <p>Get the previously loaded state as a Promise</p>
+        <p>Create a new map</p>
     </div>
     
 
@@ -2689,7 +2131,31 @@
 
         <tr>
             
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>entities</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dimensions</code></td>
             
 
             <td class="type">
@@ -2750,8 +2216,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-80">line 80</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-29">line 29</a>
 			</li>
 		</ul>
 	</dd>
@@ -2776,32 +2242,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <ul>
-<li>Promise with previously loaded data</li>
-</ul>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -2810,7 +2250,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getSaveStates"><span class="type-signature">&lt;static> </span>getSaveStates<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".discreteSamples"><span class="type-signature">&lt;static> </span>discreteSamples<span class="signature">( [n=])</span><span class="type-signature"> &rarr; {Array.&lt;any>}</span></h4>
     
     
 </dt>
@@ -2818,7 +2258,7 @@
 
     
     <div class="description">
-        <p>Get a list of save states</p>
+        <p>Get n discrete samples from array</p>
     </div>
     
 
@@ -2827,6 +2267,68 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n=</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Number of samples to pick. Default = 1</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -2864,8 +2366,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-46">line 46</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-106">line 106</a>
 			</li>
 		</ul>
 	</dd>
@@ -2893,12 +2395,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with list of save states</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -2907,7 +2403,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Array.&lt;any></span>
 
 
 
@@ -2924,7 +2420,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getSaveStates"><span class="type-signature">&lt;static> </span>getSaveStates<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".discreteSamples"><span class="type-signature">&lt;static> </span>discreteSamples<span class="signature">( [n=])</span><span class="type-signature"> &rarr; {Array.&lt;any>}</span></h4>
     
     
 </dt>
@@ -2932,7 +2428,7 @@
 
     
     <div class="description">
-        <p>Get a list of save states</p>
+        <p>Get n discrete samples from array</p>
     </div>
     
 
@@ -2941,6 +2437,68 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n=</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Number of samples to pick. Default = 1</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -2978,8 +2536,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-46">line 46</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-106">line 106</a>
 			</li>
 		</ul>
 	</dd>
@@ -3007,12 +2565,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with list of save states</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -3021,7 +2573,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Array.&lt;any></span>
 
 
 
@@ -3038,7 +2590,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".loadState"><span class="type-signature">&lt;static> </span>loadState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".getByID"><span class="type-signature">&lt;static> </span>getByID<span class="signature">(id)</span><span class="type-signature"> &rarr; {Entity}</span></h4>
     
     
 </dt>
@@ -3046,7 +2598,7 @@
 
     
     <div class="description">
-        <p>Load a state given a save state key</p>
+        <p>Get Entity with ID</p>
     </div>
     
 
@@ -3081,7 +2633,7 @@
 
         <tr>
             
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
@@ -3098,7 +2650,7 @@
 
             
 
-            <td class="description last"><p>Save State Key</p></td>
+            <td class="description last"><p>ID of <code>Entity</code></p></td>
         </tr>
 
     
@@ -3142,8 +2694,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-63">line 63</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-121">line 121</a>
 			</li>
 		</ul>
 	</dd>
@@ -3171,12 +2723,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with saved data</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -3185,7 +2731,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Entity</span>
 
 
 
@@ -3202,7 +2748,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".loadState"><span class="type-signature">&lt;static> </span>loadState<span class="signature">(key)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id=".getByID"><span class="type-signature">&lt;static> </span>getByID<span class="signature">(id)</span><span class="type-signature"> &rarr; {Entity}</span></h4>
     
     
 </dt>
@@ -3210,7 +2756,7 @@
 
     
     <div class="description">
-        <p>Load a state given a save state key</p>
+        <p>Get Entity with ID</p>
     </div>
     
 
@@ -3245,7 +2791,7 @@
 
         <tr>
             
-                <td class="name"><code>key</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
@@ -3262,7 +2808,7 @@
 
             
 
-            <td class="description last"><p>Save State Key</p></td>
+            <td class="description last"><p>ID of <code>Entity</code></p></td>
         </tr>
 
     
@@ -3306,8 +2852,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-63">line 63</a>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-121">line 121</a>
 			</li>
 		</ul>
 	</dd>
@@ -3335,12 +2881,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    <ul>
-<li>Promise with saved data</li>
-</ul>
-</div>
-
 
 
 <dl>
@@ -3349,7 +2889,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise</span>
+<span class="param-type">Entity</span>
 
 
 
@@ -3366,7 +2906,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".manualSaveState"><span class="type-signature">&lt;static> </span>manualSaveState<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".insert"><span class="type-signature">&lt;static> </span>insert<span class="signature">(entity)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -3411,7 +2951,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type">Object</span>
 
 
 
@@ -3450,57 +2990,384 @@
     
 
 	
-	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Deprecated:</dt>
+
 	
-    <dd class="yes-def tag-deprecated">
-        <ul class="dummy">
-            <li>Yes</li>
-        </ul>
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-51">line 51</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".insert"><span class="type-signature">&lt;static> </span>insert<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-51">line 51</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".nearest"><span class="type-signature">&lt;static> </span>nearest<span class="signature">(entity, count, maxDistance)</span><span class="type-signature"> &rarr; {Array.Neighbors}</span></h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Entity</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Number of neighbors</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxDistance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Range to check within</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-74">line 74</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.Neighbors</span>
+
+
+
     </dd>
-    
-    
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-37">line 37</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
 </dl>
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+        
 
     
 </dd>
@@ -3509,7 +3376,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".manualSaveState"><span class="type-signature">&lt;static> </span>manualSaveState<span class="signature">(entity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id=".nearest"><span class="type-signature">&lt;static> </span>nearest<span class="signature">(entity, count, maxDistance)</span><span class="type-signature"> &rarr; {Array.Neighbors}</span></h4>
     
     
 </dt>
@@ -3554,6 +3421,54 @@
             <td class="type">
             
                 
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Entity</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Number of neighbors</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maxDistance</code></td>
+            
+
+            <td class="type">
+            
+                
 <span class="param-type">any</span>
 
 
@@ -3565,7 +3480,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last"><p>Range to check within</p></td>
         </tr>
 
     
@@ -3593,557 +3508,68 @@
     
 
 	
-	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Deprecated:</dt>
+
 	
-    <dd class="yes-def tag-deprecated">
-        <ul class="dummy">
-            <li>Yes</li>
-        </ul>
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_util_Map.js.html">app/util/Map.js</a>,
+				 <a href="app_util_Map.js.html#sunlight-1-line-74">line 74</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.Neighbors</span>
+
+
+
     </dd>
-    
-    
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-37">line 37</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
 </dl>
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
         
-            
-<hr>
-<dt>
-    <h4 class="name" id=".resetLoadState"><span class="type-signature">&lt;static> </span>resetLoadState<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Invalidate the previously loaded state</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-87">line 87</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".resetLoadState"><span class="type-signature">&lt;static> </span>resetLoadState<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Invalidate the previously loaded state</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-87">line 87</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~storeEntity"><span class="type-signature">&lt;inner> </span>storeEntity<span class="signature">(entity, channel)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Update entity by sending information to backend</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>channel</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-11">line 11</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~storeEntity"><span class="type-signature">&lt;inner> </span>storeEntity<span class="signature">(entity, channel)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>Update entity by sending information to backend</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>channel</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_data.js.html">app/util/data.js</a>,
-				 <a href="app_util_data.js.html#sunlight-1-line-11">line 11</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
     
 </dd>

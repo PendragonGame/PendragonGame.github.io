@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: Map</title>
+	<title>Documentation Source: app/states/load-menu.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,209 +74,117 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: Map</h1>
+		<h1 class="page-title">Source: app/states/load-menu.js</h1>
+    
 <section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/**
+ * @module states/LoadMenu
+ */
+'use strict';
+const dataStore = require('../util/data');
+const moment = require('moment');
+const ui = require('../ui/ui');
 
-<header>
-    
-</header>
+let LoadMenu = {};
 
+/**
+ * 
+ * 
+ * @param {any} key 
+ */
+function loadGame() {
+    console.log('Loading: ' + this.key);
+    dataStore.loadState(this.key)
+        .then((data) => {
+            game.state.start('Load', true, false, data);
+        });
+}
 
-<article>
-    <div class="container-overview">
-    
-        
+LoadMenu.preload = function() {
 
-        
-<dl class="details">
-    
+};
 
-	
+LoadMenu.create = function() {
+    // menu background stuff
+    game.world.setBounds(0, 0, 2560, 800);
+    this.map = game.add.tilemap('menu-map');
+    this.map.addTilesetImage('outdoors', 'tileset');
+    this.bgLayer = this.map.createLayer('bg1');
+    game.camera.x = game.menuCameraPos;
 
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
+    // back button to go to menu screen
+    this.back = new ui.MenuButton(0, 0, 'Back', null, ()=>{
+            // when pressed start loading the game
+            game.state.start('Menu');
+    }, '4em');
+    this.back.setLocation(game.camera.width - this.back.button.width,
+         game.camera.height - this.back.button.height);
+    console.log(this.back.button.x);
 
 
-        
-    
-    </div>
+    let saveStates = [];
+    dataStore.getSaveStates()
+        .then((keys) => {
+            saveStates = keys.map((k) => {
+                let t = 'Autosave';
+                if (k !== 'autosave') {
+                    let o = moment(k, moment.ISO_8601);
+                    t = o.format('MMM Do YY - hh:mm:ss. a');
+                }
+                return {
+                    key: k,
+                    title: t,
+                };
+            });
+            saveStates.sort((a, b) => {
+                if (a.key == 'autosave') return 1;
+                if (b.key == 'autosave') return -1;
+                let am = moment(a.key);
+                let bm = moment(b.key);
+                if (am.isAfter(bm)) return -1;
+                if (am.isBefore(bm)) return 1;
+                return 0;
+            });
+            let autosaveIndex = saveStates.findIndex(
+                (s) =>s.key === 'autosave');
+            if (autosaveIndex > -1) {
+                saveStates.splice(autosaveIndex, 1);
+                this.autosave = new ui.MenuButton(game.camera.width / 2,
+                    100, 'Autosave',
+                    'autosave',
+                    loadGame
+                );
+            }
+            this.buttonList = new ui.ButtonList(saveStates, loadGame);
+        })
+        .catch((reason) => {
+            console.error(reason);
+        });
+};
 
-    
+LoadMenu.update = function() {
+    // menu background stuff
+    if (game.camera.x === 1280) {
+        game.camera.x = 0;
+        game.menuCameraPos = game.camera.x;
+    }
+    game.camera.x += 1;
+    game.menuCameraPos = game.camera.x;
+};
 
-    
 
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+module.exports = LoadMenu;
+</pre>
+    </article>
 </section>
 
-
-
-
-	<h1 class="page-title">Module: Map</h1>
-<section>
-
-<header>
-    
-</header>
-
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
 
 
 
@@ -286,10 +194,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
 	
 
 </div>

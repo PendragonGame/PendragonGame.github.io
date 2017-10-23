@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: Map</title>
+	<title>Documentation Source: app/factory/Factory.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,209 +74,110 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: Map</h1>
+		<h1 class="page-title">Source: app/factory/Factory.js</h1>
+    
 <section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">'use strict';
+/**
+ * @module Factory
+ */
+const Map = require('../util/Map');
 
-<header>
-    
-</header>
+/**
+ * 
+ * @param {*} x 
+ * @param {*} y 
+ * @param {*} bounds
+ * @return {boolean}
+ * @function
+ */
+function withinBounds(x, y, bounds) {
+    for (let i = 0; i &lt; bounds.length; i ++) {
+        if (x >= bounds[i][0].x &amp;&amp; x &lt;= bounds[i][1].x
+            &amp;&amp; y >= bounds[i][0].y &amp;&amp; y &lt;= bounds[i][1].y) {
+            return true;
+        }
+    }
+    return false;
+}
 
+/**
+ * 
+ * @param {*} bounds 
+ * @return {Object}
+ * @function
+ */
+function randInBounds(bounds) {
+    let b = bounds[game.rnd.integerInRange(0, bounds.length -1 )];
+    return {
+        x: game.rnd.integerInRange(b[0].x, b[1].x),
+        y: game.rnd.integerInRange(b[0].y, b[1].y),
+    };
+}
 
-<article>
-    <div class="container-overview">
-    
-        
+/**
+ * 
+ * 
+ * @param {any} entity 
+ * @param {any} group 
+ * @param {Array} bounds
+ * @param {number=} limit
+ * @constructor Factory
+ */
+function Factory(entity, group, bounds, limit) {
+    if (entity === undefined || bounds === undefined) {
+        throw new TypeError('Undefined type?');
+    }
+    this.Entity = entity;
+    this.group = group;
+    this.bounds = bounds;
+    this.limit = limit || Infinity;
+    this.generated = 0;
+}
 
-        
-<dl class="details">
-    
+/**
+ * This will return a new `Entity` if the number of existing
+ * `Entities` has not exceeded the `limit`.
+ * 
+ * @param {number} x
+ * @param {number} y
+ * @param {any} key
+ * @return {Entity}
+ */
+Factory.prototype.next = function(x, y, key) {
+    /**
+     * Return nothing if limit has been reached
+     */
+    let living = this.group.countLiving();
+    if ( living >= this.limit) return;
+    if (x === null || y === null || !withinBounds(x, y, this.bounds)) {
+        let o = randInBounds(this.bounds);
+        x = o.x;
+        y = o.y;
+    }
 
-	
+    /**
+     * Else, return a new entity and add it to the list.
+     */
+    let sprite = new this.Entity(x, y, key);
+    this.group.add(sprite);
+    sprite.setDirection(Math.floor(Math.random() * 4) + 1);
+    sprite.idleHere();
+    return sprite;
+};
 
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+module.exports = Factory;
+</pre>
+    </article>
 </section>
 
-
-
-
-	<h1 class="page-title">Module: Map</h1>
-<section>
-
-<header>
-    
-</header>
-
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
 
 
 
@@ -286,10 +187,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
 	
 
 </div>

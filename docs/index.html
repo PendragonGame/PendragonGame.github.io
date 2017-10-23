@@ -11,13 +11,13 @@
 	<![endif]-->
 	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
 
-	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
 
 </head>
 
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top ">
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
 <div class="container">
 	<div class="navbar-header">
 		<a class="navbar-brand" href="index.html">Documentation</a>
@@ -31,9 +31,23 @@
 		<ul class="nav navbar-nav">
 			
 			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-Map-Map.html">Map~Map</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="ai.module_Nav-mesh.html">ai.Nav-mesh</a></li><li><a href="backend.module_dbStore.html">backend.dbStore</a></li><li><a href="entity.html#.module:Entity">entity.Entity</a></li><li><a href="entity.module_Monster.html">entity.Monster</a></li><li><a href="entity.module_NPC.html">entity.NPC</a></li><li><a href="entity.module_Player.html">entity.Player</a></li><li><a href="module-dataStore.html">dataStore</a></li><li><a href="module-Factory.html">Factory</a></li><li><a href="module-Map.html">Map</a></li><li><a href="module-Ripple.html">Ripple</a></li><li><a href="module-States.html">States</a></li><li><a href="module-UI.html">UI</a></li><li><a href="module-Win.html">Win</a></li><li><a href="states.module_Boot.html">states.Boot</a></li><li><a href="states.module_GameOver.html">states.GameOver</a></li><li><a href="states.module_Load.html">states.Load</a></li><li><a href="states.module_LoadMenu.html">states.LoadMenu</a></li><li><a href="states.module_Menu.html">states.Menu</a></li><li><a href="states.module_Play.html">states.Play</a></li><li><a href="states.module_Settings.html">states.Settings</a></li>
+					<li><a href="module-ai_NavMesh.html">ai/NavMesh</a></li><li><a href="module-backend_dbStore.html">backend/dbStore</a></li><li><a href="module-dataStore.html">dataStore</a></li><li><a href="module-entity_Entity.html">entity/Entity</a></li><li><a href="module-entity_Monster.html">entity/Monster</a></li><li><a href="module-entity_NPC.html">entity/NPC</a></li><li><a href="module-entity_Player.html">entity/Player</a></li><li><a href="module-Factory.html">Factory</a></li><li><a href="module-Map.html">Map</a></li><li><a href="module-Ripple.html">Ripple</a></li><li><a href="module-States.html">States</a></li><li><a href="module-states_Boot.html">states/Boot</a></li><li><a href="module-states_GameOver.html">states/GameOver</a></li><li><a href="module-states_Load.html">states/Load</a></li><li><a href="module-states_LoadMenu.html">states/LoadMenu</a></li><li><a href="module-states_Menu.html">states/Menu</a></li><li><a href="module-states_Play.html">states/Play</a></li><li><a href="module-states_Settings.html">states/Settings</a></li><li><a href="module-states_Win.html">states/Win</a></li><li><a href="module-ui_UI.html">ui/UI</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="module-ai_NavMesh-NavMesh.html">ai/NavMesh~NavMesh</a></li><li><a href="module-entity_Entity-Entity.html">entity/Entity~Entity</a></li><li><a href="module-entity_Monster-Monster.html">entity/Monster~Monster</a></li><li><a href="module-entity_NPC-NPC.html">entity/NPC~NPC</a></li><li><a href="module-entity_Player-Player.html">entity/Player~Player</a></li><li><a href="module-Factory-Factory.html">Factory~Factory</a></li><li><a href="module-Ripple-Ripple.html">Ripple~Ripple</a></li><li><a href="module-ui_UI-ButtonList.html">ui/UI~ButtonList</a></li><li><a href="module-ui_UI-MenuButton.html">ui/UI~MenuButton</a></li>
 				</ul>
 			</li>
 			
@@ -105,7 +119,7 @@
 <li>Extract contents of the zip file</li>
 <li>Open uncompressed folder and run pendragon.exe</li>
 </ol>
-<h2>For Contributors:</h2><ol>
+<h2>For Contributors</h2><ol>
 <li>Clone the repo </li>
 <li>Change directories into the <code>src/</code> folder</li>
 <li><code>npm install</code> when in <code>src/</code> folder </li>
@@ -114,13 +128,14 @@
 <p>The source directory contains the following:</p>
 <ul>
 <li><code>app/</code>: The frontend of the application running on <a href="https://photonstorm.github.io/phaser-ce/">PhaserJS Community Edition</a><ul>
+<li><code>app.js</code>: Entry point for front end.</li>
 <li><code>states/</code>: The Phaser <code>States</code></li>
 <li><code>entity/</code>: The <code>Entity</code> abstraction and its sub-classes.</li>
 <li><code>factory/</code>: The <code>Entity</code> factory abstraction.</li>
 </ul>
 </li>
 <li><code>main.js</code>: The backend main script<ul>
-<li><code>data-store</code>: The database manager.</li>
+<li><code>data-store/</code>: The database manager.</li>
 </ul>
 </li>
 </ul></article>
@@ -169,7 +184,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2017-10-23T08:53:58-04:00
+		on Mon Oct 23rd 2017
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
@@ -215,7 +230,7 @@ $( function () {
 	} );
 
 	Sunlight.highlightAll( {
-		lineNumbers : false,
+		lineNumbers : true,
 		showMenu : true,
 		enableDoclinks : true
 	} );

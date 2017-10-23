@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: Map</title>
+	<title>Documentation Source: app/states/settings.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,209 +74,80 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: Map</h1>
+		<h1 class="page-title">Source: app/states/settings.js</h1>
+    
 <section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">'use strict';
+/**
+ * @module states/Settings
+ */
+const ui = require('../ui/ui');
+let electron = require('electron');
+let window = electron.remote.getCurrentWindow();
+let Settings = {};
 
-<header>
-    
-</header>
+Settings.create = function() {
+    // menu background stuff
+    game.world.setBounds(0, 0, 2560, 800);
+    this.map = game.add.tilemap('menu-map');
+    this.map.addTilesetImage('outdoors', 'tileset');
+    this.bgLayer = this.map.createLayer('bg1');
+    game.camera.x = game.menuCameraPos;
 
+     // back button to go to menu screen
+     this.back = new ui.MenuButton(0, 0, 'Back', null, ()=>{
+        // when pressed start loading the game
+        game.state.start('Menu');
+}, '4em');
+    this.back.setLocation(game.camera.width - this.back.button.width,
+        game.camera.height - this.back.button.height);
+    console.log(this.back.button.x);
 
-<article>
-    <div class="container-overview">
-    
-        
+    this.settings = [];
 
-        
-<dl class="details">
-    
+    this.settings.push(new ui.MenuButton(
+        game.camera.width/2, 200,
+         window.isFullScreen() ? 'Windowed' : 'Fullscreen', null,
+        ()=>{
+            console.log('fulscreen toggled');
+            window.setResizable(true);
+            window.setFullScreenable(true);
+            if (window.isFullScreen()) {
+                window.setFullScreen(false);
+                this.settings[0].text.text = 'Fullscreen';
+            } else {
+                window.setFullScreen(true);
+                this.settings[0].text.text = 'Windowed';
+            }
+            window.setResizable(false);
+            window.setFullScreenable(false);
+        }, '4em'
+    ));
+};
 
-	
+module.exports = Settings;
 
-	
+Settings.update = function() {
+    // menu background stuff
+    if (game.camera.x === 1280) {
+        game.camera.x = 0;
+        game.menuCameraPos = game.camera.x;
+    }
+    game.camera.x += 1;
+    game.menuCameraPos = game.camera.x;
+};
 
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+</pre>
+    </article>
 </section>
 
-
-
-
-	<h1 class="page-title">Module: Map</h1>
-<section>
-
-<header>
-    
-</header>
-
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
 
 
 
@@ -286,10 +157,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
 	
 
 </div>

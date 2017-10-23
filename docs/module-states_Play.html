@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: Factory</title>
+	<title>Documentation Module: states/Play</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,7 +79,7 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: Factory</h1>
+	<h1 class="page-title">Module: states/Play</h1>
 <section>
 
 <header>
@@ -127,8 +127,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-2">line 2</a>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-2">line 2</a>
 			</li>
 		</ul>
 	</dd>
@@ -151,21 +151,155 @@
     
 
     
-        <h3 class="subsection-title">Classes</h3>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
 
         <dl>
-            <dt><a href="module-Factory-Factory.html">Factory</a></dt>
-            <dd></dd>
+            
+<hr>
+<dt class="name" id="~i">
+    <h4 id="~i"><span class="type-signature">&lt;inner> </span>i<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Generate a factory and a few NPCs</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-676">line 676</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
         
-            <dt><a href="module-Factory-Factory.html">Factory</a></dt>
-            <dd></dd>
+            
+<hr>
+<dt class="name" id="~i">
+    <h4 id="~i"><span class="type-signature">&lt;inner> </span>i<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Generate a factory and a few NPCs</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-676">line 676</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
         </dl>
-    
-
-    
-
-    
-
     
 
     
@@ -175,12 +309,17 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="~randInBounds"><span class="type-signature">&lt;inner> </span>randInBounds<span class="signature">(bounds)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~entityCollision"><span class="type-signature">&lt;inner> </span>entityCollision<span class="signature">(entity1, entity2)</span><span class="type-signature"></span></h4>
     
     
 </dt>
 <dd>
 
+    
+    <div class="description">
+        <p>Handle collision between two <code>Entities</code></p>
+<p>This needs to be run in the context of Play state</p>
+    </div>
     
 
     
@@ -214,13 +353,37 @@
 
         <tr>
             
-                <td class="name"><code>bounds</code></td>
+                <td class="name"><code>entity1</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">any</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>entity2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
 
 
 
@@ -275,8 +438,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-31">line 31</a>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-510">line 510</a>
 			</li>
 		</ul>
 	</dd>
@@ -301,26 +464,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -329,12 +472,17 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="~randInBounds"><span class="type-signature">&lt;inner> </span>randInBounds<span class="signature">(bounds)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~entityCollision"><span class="type-signature">&lt;inner> </span>entityCollision<span class="signature">(entity1, entity2)</span><span class="type-signature"></span></h4>
     
     
 </dt>
 <dd>
 
+    
+    <div class="description">
+        <p>Handle collision between two <code>Entities</code></p>
+<p>This needs to be run in the context of Play state</p>
+    </div>
     
 
     
@@ -368,13 +516,37 @@
 
         <tr>
             
-                <td class="name"><code>bounds</code></td>
+                <td class="name"><code>entity1</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">any</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>entity2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
 
 
 
@@ -429,8 +601,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-31">line 31</a>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-510">line 510</a>
 			</li>
 		</ul>
 	</dd>
@@ -455,430 +627,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~withinBounds"><span class="type-signature">&lt;inner> </span>withinBounds<span class="signature">(x, y, bounds)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bounds</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-15">line 15</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~withinBounds"><span class="type-signature">&lt;inner> </span>withinBounds<span class="signature">(x, y, bounds)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bounds</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-15">line 15</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -896,7 +644,7 @@
 
 
 
-	<h1 class="page-title">Module: Factory</h1>
+	<h1 class="page-title">Module: states/Play</h1>
 <section>
 
 <header>
@@ -944,8 +692,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-2">line 2</a>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-2">line 2</a>
 			</li>
 		</ul>
 	</dd>
@@ -968,21 +716,155 @@
     
 
     
-        <h3 class="subsection-title">Classes</h3>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
 
         <dl>
-            <dt><a href="module-Factory-Factory.html">Factory</a></dt>
-            <dd></dd>
+            
+<hr>
+<dt class="name" id="~i">
+    <h4 id="~i"><span class="type-signature">&lt;inner> </span>i<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Generate a factory and a few NPCs</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-676">line 676</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
         
-            <dt><a href="module-Factory-Factory.html">Factory</a></dt>
-            <dd></dd>
+            
+<hr>
+<dt class="name" id="~i">
+    <h4 id="~i"><span class="type-signature">&lt;inner> </span>i<span class="type-signature"></span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>Generate a factory and a few NPCs</p>
+    </div>
+    
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-676">line 676</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+</dd>
+
         </dl>
-    
-
-    
-
-    
-
     
 
     
@@ -992,12 +874,17 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="~randInBounds"><span class="type-signature">&lt;inner> </span>randInBounds<span class="signature">(bounds)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~entityCollision"><span class="type-signature">&lt;inner> </span>entityCollision<span class="signature">(entity1, entity2)</span><span class="type-signature"></span></h4>
     
     
 </dt>
 <dd>
 
+    
+    <div class="description">
+        <p>Handle collision between two <code>Entities</code></p>
+<p>This needs to be run in the context of Play state</p>
+    </div>
     
 
     
@@ -1031,13 +918,37 @@
 
         <tr>
             
-                <td class="name"><code>bounds</code></td>
+                <td class="name"><code>entity1</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">any</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>entity2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
 
 
 
@@ -1092,8 +1003,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-31">line 31</a>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-510">line 510</a>
 			</li>
 		</ul>
 	</dd>
@@ -1118,26 +1029,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>
@@ -1146,12 +1037,17 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="~randInBounds"><span class="type-signature">&lt;inner> </span>randInBounds<span class="signature">(bounds)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    <h4 class="name" id="~entityCollision"><span class="type-signature">&lt;inner> </span>entityCollision<span class="signature">(entity1, entity2)</span><span class="type-signature"></span></h4>
     
     
 </dt>
 <dd>
 
+    
+    <div class="description">
+        <p>Handle collision between two <code>Entities</code></p>
+<p>This needs to be run in the context of Play state</p>
+    </div>
     
 
     
@@ -1185,13 +1081,37 @@
 
         <tr>
             
-                <td class="name"><code>bounds</code></td>
+                <td class="name"><code>entity1</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">any</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>entity2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
 
 
 
@@ -1246,8 +1166,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-31">line 31</a>
+				<a href="app_states_play.js.html">app/states/play.js</a>,
+				 <a href="app_states_play.js.html#sunlight-1-line-510">line 510</a>
 			</li>
 		</ul>
 	</dd>
@@ -1272,430 +1192,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~withinBounds"><span class="type-signature">&lt;inner> </span>withinBounds<span class="signature">(x, y, bounds)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bounds</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-15">line 15</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id="~withinBounds"><span class="type-signature">&lt;inner> </span>withinBounds<span class="signature">(x, y, bounds)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>x</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>y</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>bounds</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">*</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_factory_Factory.js.html">app/factory/Factory.js</a>,
-				 <a href="app_factory_Factory.js.html#sunlight-1-line-15">line 15</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-
-    </dd>
-</dl>
-
-
-        
 
     
 </dd>

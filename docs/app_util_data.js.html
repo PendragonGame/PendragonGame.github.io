@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Module: Map</title>
+	<title>Documentation Source: app/util/data.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,209 +74,110 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: Map</h1>
+		<h1 class="page-title">Source: app/util/data.js</h1>
+    
 <section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">'use strict';
+/**
+ * @module dataStore
+ * @exports dataStore
+ */
 
-<header>
-    
-</header>
+const {ipcRenderer} = require('electron');
 
+let loadedState = null;
 
-<article>
-    <div class="container-overview">
-    
-        
+/**
+ * Update entity by sending information to backend
+ * 
+ * @param {any} entity 
+ * @param {string} channel
+ * @function storeEntity
+ */
+function storeEntity(entity, channel) {
+    let data = entity.serialize();
+    ipcRenderer.send(channel, data);
+};
 
-        
-<dl class="details">
-    
+/**
+ * Store entities as autosave
+ * 
+ * @param {module:entity/Entity~Entity} entity 
+ */
+module.exports.autosaveEntity = function(entity) {
+    storeEntity(entity, 'saveEntity');
+};
 
-	
+/**
+ * 
+ * @param {any} entity 
+ * @deprecated
+ */
+module.exports.manualSaveState = function() {
+    ipcRenderer.send('manualSaveState', true);
+};
 
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
+/**
+ * Get a list of save states
+ * 
+ * @return {Promise} - Promise with list of save states
+ */
+module.exports.getSaveStates = function() {
+    ipcRenderer.send('listSaveStates', true);
+    return new Promise(function(resolve, reject) {
+        ipcRenderer.on('reply-listSaveStates', (ev, arg) => {
+            if (!arg.success) reject('Failed to list keys');
+            resolve(arg.data);
+        });
+    });
+};
 
 
-        
-    
-    </div>
+/**
+ * Load a state given a save state key
+ * 
+ * @param {string} key - Save State Key
+ * @return {Promise} - Promise with saved data
+ */
+module.exports.loadState = function(key) {
+    ipcRenderer.send('loadState', key);
+    loadedState = new Promise(function(resolve, reject) {
+        ipcRenderer.on('reply-loadState', (ev, arg) => {
+            if (!arg.success) reject('Failed to load key');
+            resolve(arg.data);
+        });
+    });
+    return loadedState;
+};
 
-    
+/**
+ * Get the previously loaded state as a Promise
+ * 
+ * @param {any} key 
+ * @return {Promise} - Promise with previously loaded data
+ */
+module.exports.getLoadedState = function(key) {
+    return loadedState;
+};
 
-    
+/**
+ * Invalidate the previously loaded state
+ */
+module.exports.resetLoadState = function() {
+    loadedState = null;
+};
 
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+</pre>
+    </article>
 </section>
 
-
-
-
-	<h1 class="page-title">Module: Map</h1>
-<section>
-
-<header>
-    
-</header>
-
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="app_util_Map.js.html">app/util/Map.js</a>,
-				 <a href="app_util_Map.js.html#sunlight-1-line-1">line 1</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#module:Map~Map"><a href="module-Map-Map.html">Map</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
 
 
 
@@ -286,10 +187,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
 	
 
 </div>
