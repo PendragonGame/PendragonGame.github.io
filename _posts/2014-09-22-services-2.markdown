@@ -5,6 +5,6 @@ category: Services
 title: Contributing and Beta Testing
 description: |
 ---
-  If you wawt to contribute to Pendragon visit our [GitHub](https://github.com/PendragonGame/pendragon).
+  If you would like to contribute to Pendragon visit our [GitHub](https://github.com/PendragonGame/pendragon).
 
-  If you find any strange behavior while playing Pendragon please create an issue on our [GitHub](https://github.com/PendragonGame/pendragon/issues).
+  If you find any strange behavior while playing the Pendragon Beta please create an issue on our [GitHub](https://github.com/PendragonGame/pendragon/issues).
