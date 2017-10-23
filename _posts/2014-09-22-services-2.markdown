@@ -5,4 +5,4 @@ category: Services
 title: Beta Testing
 description: |
 ---
-  If you find any strange behavior while playing Pendragon please create an issue on our Github[https://github.com/PendragonGame/pendragon/issues]
+  If you find any strange behavior while playing Pendragon please create an issue on our [Github](https://github.com/PendragonGame/pendragon/issues).
