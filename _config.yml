@@ -23,3 +23,10 @@ permalink: pretty
 #   3rd Party Settings    #
 # ----------------------- #
 
+social:
+  - title: Windows
+    url: https://twitter.com/SBootstrap
+  - title: Mac
+    url: https://github.com/IronSummitMedia/startbootstrap
+  - title: Linux
+    url: 
