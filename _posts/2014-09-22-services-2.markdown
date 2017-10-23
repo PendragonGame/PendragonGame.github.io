@@ -2,7 +2,9 @@
 layout: default
 img: GitHub-Mark.png
 category: Services
-title: Beta Testing
+title: Contributing and Beta Testing
 description: |
 ---
-  If you find any strange behavior while playing Pendragon please create an issue on our [Github](https://github.com/PendragonGame/pendragon/issues).
+  If you wawt to contribute to Pendragon visit our [GitHub](https://github.com/PendragonGame/pendragon).
+
+  If you find any strange behavior while playing Pendragon please create an issue on our [GitHub](https://github.com/PendragonGame/pendragon/issues).
