@@ -5,4 +5,4 @@ category: Services
 title: Hate our game? Give us feed back.
 description: |
 ---
- Share your thoughts about Pendragon using this [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfmAW6EeTJamukLToaH7q45D-2K4XoKphusuAAyjiF5IVercg/viewform).
+ Share your thoughts about Pendragon using this [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfmAW6EeTJamukLToaH7q45D-2K4XoKphusuAAyjiF5IVercg/viewform)
