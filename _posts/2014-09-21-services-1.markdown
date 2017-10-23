@@ -2,7 +2,7 @@
 layout: default
 img: ipad.png
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
+title: Hate our game? Give us feed back.
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+ Share your thoughts about Pendragon using this [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfmAW6EeTJamukLToaH7q45D-2K4XoKphusuAAyjiF5IVercg/viewform)
