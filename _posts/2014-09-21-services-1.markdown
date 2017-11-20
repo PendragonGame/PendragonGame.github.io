@@ -1,8 +1,8 @@
 ---
 layout: default
-img: scrn.PNG
+img: bow.png
 category: Services
-title: Hate Our Game? Give Us Feed Back
+title: Features
 description: |
 ---
  Share your thoughts about Pendragon using this [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfmAW6EeTJamukLToaH7q45D-2K4XoKphusuAAyjiF5IVercg/viewform).
