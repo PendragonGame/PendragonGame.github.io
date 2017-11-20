@@ -7,4 +7,4 @@ description: |
 ---
   Pendragon is open source, feel free to check out our [GitHub](https://github.com/PendragonGame/pendragon) and contribute to the game.
 
-  Send us bug reports at our [GitHub](https://github.com/PendragonGame/pendragon/issues) issues page.
+  Send us bug reports at our [GitHub Issues](https://github.com/PendragonGame/pendragon/issues) page.
