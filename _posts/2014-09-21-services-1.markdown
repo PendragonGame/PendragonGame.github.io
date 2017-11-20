@@ -5,4 +5,8 @@ category: Services
 title: Features
 description: |
 ---
- Share your thoughts about Pendragon using this [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSfmAW6EeTJamukLToaH7q45D-2K4XoKphusuAAyjiF5IVercg/viewform).
+------ Weapons
+* Both Melee and Ranged weapons.
+
+----- Loot
+* Pick up various items in the game.
