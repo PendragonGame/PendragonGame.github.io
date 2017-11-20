@@ -1,6 +1,6 @@
 ---
 layout: default
-img: bow.png
+img: bow.PNG
 category: Services
 title: Features
 description: |
