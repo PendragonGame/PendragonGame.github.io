@@ -2,9 +2,9 @@
 layout: default
 img: GitHub-Mark.png
 category: Services
-title: Contributing and Beta Testing
+title: Contributing and Bug Reports
 description: |
 ---
-  If you would like to contribute to Pendragon visit our [GitHub](https://github.com/PendragonGame/pendragon).
+  Pendragon is open source, feel free to check out our [GitHub](https://github.com/PendragonGame/pendragon) and contribute to the game.
 
-  If you find any strange behavior while playing the Pendragon Beta please create an issue on our [GitHub](https://github.com/PendragonGame/pendragon/issues).
+  Send us bug reports at our [GitHub](https://github.com/PendragonGame/pendragon/issues) issues page.
