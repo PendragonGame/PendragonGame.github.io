@@ -5,8 +5,8 @@ category: Services
 title: Features
 description: |
 ---
-## Weapons
+#### Weapons
 * Both Melee and Ranged weapons.
 
-## Loot
+#### Loot
 * Pick up various new items in the game.
