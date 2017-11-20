@@ -9,4 +9,4 @@ description: |
 * Both Melee and Ranged weapons.
 
 ----- Loot
-* Pick up various items in the game.
+* Pick up various new items in the game.
