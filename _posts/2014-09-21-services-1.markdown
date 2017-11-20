@@ -6,7 +6,7 @@ title: Features
 description: |
 ---
 #### Weapons
-* Both Melee and Ranged weapons.
+* Added a new ranged weapon to the game.
 
 #### Loot
 * Pick up various new items in the game.
